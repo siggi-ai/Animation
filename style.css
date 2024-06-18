@@ -1,46 +1,46 @@
-#animation {
+#animator {
     padding: 1rem;
 }
 
-#animation p {
+#animator p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: fadein;
-    color: rgba(200, 200, 200, 0)
+    color: rgba(255, 255, 255, 1)
 }
 
-#animation p:not(small) {
+#animator p:not(small) {
     font-size: 3rem;
     text-transform: uppercase;
-    --color0: rgba(200,200,200,0)
-    --color1: rgba(200,200,200,1)
+    --color0: rgba(0, 0, 0, 0);
+    --color1: rgba(0,0,0,1)
 }
 
-#animation p.small {
+#animator p.small {
     font-size: 2rem;
-    --color0: rgba(200,200,200,0)
+    --color0: rgba(200,200,200,0);
     --color1: rgba(200,200,200,1)
 }
 
-#animation p:nth-of-type(1) {
+#animator p:nth-of-type(1) {
     animation-delay: 1s;
 }
 
-#animation p:nth-of-type(2) {
+#animator p:nth-of-type(2) {
     animation-delay: 4.5s;
 }
 
-#animation p:nth-of-type(3) {
+#animator p:nth-of-type(3) {
     animation-delay: 7.5s;
 }
 
-#animation p:nth-of-type(4) {
+#animator p:nth-of-type(4) {
     animation-delay: 10.5s;
 }
 
-#animation p:nth-of-type(5) {
+#animator p:nth-of-type(5) {
     animation-delay: 12.5s;
 }
 
