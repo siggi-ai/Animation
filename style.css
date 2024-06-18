@@ -3,23 +3,25 @@
 }
 
 #animation p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-name: fadein;
-    color: rgba(255, 255, 255, 0)
+    color: rgba(200, 200, 200, 0)
 }
 
 #animation p:not(small) {
-    font-size: 4 rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    --color0:rbga(255,255,255,0)
-    --color0:rbga(255,255,255,1)
+    --color0: rgba(200,200,200,0)
+    --color1: rgba(200,200,200,1)
 }
 
 #animation p.small {
-    --color0:rbga(200,200,200,0)
-    --color0:rbga(200,200,200,1)
+    font-size: 2rem;
+    --color0: rgba(200,200,200,0)
+    --color1: rgba(200,200,200,1)
 }
 
 #animation p:nth-of-type(1) {
