@@ -1,36 +1,52 @@
-body {
-    background-color: black;
+#animation {
+    padding: 1rem;
 }
 
-.head1, .head2, .head3 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#animation p {
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: fadein;
+    color: rgba(255, 255, 255, 0)
 }
 
-.head4, .head5 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+#animation p:not(small) {
+    font-size: 4 rem;
+    text-transform: uppercase;
+    --color0:rbga(255,255,255,0)
+    --color0:rbga(255,255,255,1)
 }
 
-.head1 {
-    transition: color 1s ease 0.5s;
-    color: antiquewhite;
+#animation p.small {
+    --color0:rbga(200,200,200,0)
+    --color0:rbga(200,200,200,1)
 }
 
-.head2 {
-    transition: color 4.5s ease 0.5s;
-    color: antiquewhite;
+#animation p:nth-of-type(1) {
+    animation-delay: 1s;
 }
 
-.head3 {
-    transition: color 7.5s ease 0.5s;
-    color: antiquewhite;
+#animation p:nth-of-type(2) {
+    animation-delay: 4.5s;
 }
 
-.head4 {
-    transition: color 10.5s ease 0.5s;
-    color: rgb(121, 121, 121);
+#animation p:nth-of-type(3) {
+    animation-delay: 7.5s;
 }
 
-.head5 {
-    transition: color 12.5s ease 0.5s;
-    color: rgb(121, 121, 121);
+#animation p:nth-of-type(4) {
+    animation-delay: 10.5s;
+}
+
+#animation p:nth-of-type(5) {
+    animation-delay: 12.5s;
+}
+
+@keyframes fadein {
+    from {
+        color:var(--color0)
+    }
+    to {
+        color:var(--color1)
+    }
 }
